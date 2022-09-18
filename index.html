@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .wrap{
+            width: 100%;
+            height: 100vh;
+            background-color: yellow;
+           
+
+        }
+        img{
+            background-size: cover;
+            width: 277px;
+            height: 277px;
+            border-radius: 50%;
+            border: 3px solid black;
+        }
+        .myPhoto{
+            position: relative;
+            left: 140px;
+            top: 60px;
+            width: 280px;
+            height: 280px;
+            border-radius: 50%;
+            background-color: yellow;
+
+            
+            
+
+        }
+        .name{
+            position: relative;
+            top: -200px;
+            left: 1000px;
+            width: 300px;
+            height: 50px;
+            
+            border-radius: 10px;
+
+        }
+        .skill__block{
+            width: 500px;
+            height: 370px;
+            background-color: black;position: relative;
+            top: -120px;
+            left: 900px;
+            border-radius: 20px;
+            border: 4px solid rgb(201, 201, 27)
+        }
+      
+        .typer {
+            position: relative;
+            top: 0px;
+            left: 0;
+            font-size: 50px;
+            font-family: monospace;
+            font-weight: 500;
+            color: white;
+            z-index: 2;
+        }
+        .skil{
+            color: yellow;
+            font-size: 20px;
+            text-align: center;
+            padding:  10px 0 0 0;
+            font-family: monospace;
+            font-weight: 500;
+        }
+        p{
+            font-size: 17px;
+            padding: 20px;
+            color: yellow;
+            
+          
+        }
+        .efe{
+            color: black;
+            padding: 0;
+        }
+        .e{
+            position: relative;
+            top: -30px;
+        }
+        .pe{
+            position: relative;
+            top: -60px;
+        }
+        .card{
+            display: flex;
+            perspective: 1000px;
+            transform-style: preserve-3d;
+            cursor: pointer;
+         
+        }
+
+        .card-item{
+            width: 200px;
+            height: 290px;
+            position: absolute;
+            top: -290px;
+            left: 60px;
+            
+            
+            background-color: black;
+            border: 4px solid rgb(201, 201, 27);
+            border-radius: 10px;
+            transition: transform 0.2s;
+            
+        }
+        .ie{
+            top: -290px;
+            left: 300px;
+        }
+        .ier{
+            top: -290px;
+            left: 550px;
+        }
+        .descp{
+            text-align: center;
+            position: relative;
+            font-size: 20px;
+            left: 55px;
+           
+           
+            color:  yellow;
+            top: 210px;
+            font-family: monospace;
+            font-weight: 500;
+            text-decoration: none;
+
+           
+
+        }
+
+        @media(max-width:767px){
+            .wrap{
+                height: 240vh;
+            }
+           img{
+            width: 200px;
+            height: 200px;
+            position: relative;
+            left: 0;
+           }
+           .name{
+            position: relative;
+            left: 120px;
+            top: 0;
+           }
+           .typer{
+            font-size: 30px;
+            
+           }
+           .skill__block{
+            position: relative;
+            left: 75px;
+            width: 350px;
+            height: 200px;
+            top: 70px;
+           }
+           .card-item{
+            position: absolute;
+            top: 460px;
+            left: 160px;
+
+
+            
+
+           
+            
+            
+           }
+           .ie{
+            top: 120px;
+            left: 160px;
+
+           }
+           .ier{
+            top: 830px;
+            left: 160px;
+
+           }
+        }
+        @media(max-width:375px) {
+           .wrap{
+            height: 100vh;
+           }
+           img{
+            left: -50px;
+           }
+        
+            
+        }
+      
+     
+
+     
+
+    
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="myPhoto">
+            <img src="maks.jpg" alt="">
+
+        </div>
+        <div class="name">
+            <h1> I'm
+                <span class = "typer" id = "main" data-words = "Maks,Hnap" data-delay = "100" data-deleteDelay = "1000" data-color="white" ></span > <span class = "cursor" data-owner = "main" ></span> </h1> <p class="efe">I'm ukrainian. I can work for 100% </p>
+        </div>
+        <div class="skill__block">
+            <h1 class="skil">my skills</h1>
+            <p>Js ,CSS ,Sass ,Scss ,Stylus ,Html ,Bootstrap ,Typer.js ,Tippy.js ,Aos</p>
+            <p class="e">Api ,Rexexp ,Node ,Figma ,Photoshop </p>
+            <p class="pe">Experience with: python, java, c#, c++</p>
+            
+
+        </div>
+        <div class="cont">
+        
+        <div class="card">
+            <div class="card-item">
+                <a href="https://maksimgnam.github.io/CoffeeMachine/" class="descp">coffee</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-item ie">
+                <a href="https://maksimgnam.github.io/home/" class="descp">home</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-item ier">
+                <a href="https://maksimgnam.github.io/visa/" class="descp">visa</a>
+            </div>
+        </div>
+    </div>
+      
+  
+
+
+    </div>
+    <script async src="https://unpkg.com/typer-dot-js@0.1.0/typer.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
